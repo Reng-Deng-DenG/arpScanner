@@ -2,7 +2,7 @@ from scapy.all import *
 
 scan = 5
 broadcast =  'FF:FF:FF:FF:FF:FF'
-ipRange = '192.168.47.0/24'
+ipRange = '192.168.43.0/24'
 interface =  'wlo1'
 ipList = {}
 x = 0
