@@ -5,19 +5,6 @@ conf.iface = "wlo1"# Interface réseau utilisée
 conf.verb = 0 # Déactivation des notifications
 conf.checkIPaddr = False# désactiver la vérification des adresses par Scapy
 
-'''
-op=1 => ARP REQUEST
-op=2 => ARP REPLY
-
-psrc => Address IP de l'expiditeur/ IP SPOOF
-hwsrc= => Address MAC l'expiditeur/ Address MAC SPOOF
-
-hwdst => Address mac de la cible/ MAC VICTM
-pdst = > Address ip de la cible/ IP victim
-
-'''
-
-
 def GetMacAddress(ip):
 
 	on, off = srp(Ether(dst='FF:FF:FF:FF:FF:FF')/ARP(pdst=ip), timeout=3)
